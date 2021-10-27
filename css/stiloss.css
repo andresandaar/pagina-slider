@@ -1,0 +1,276 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background: #26A5B8;
+}
+
+.container {
+   width: 1330px;
+   background: #26A5B8;
+   margin: 10px 0 0 0;
+   padding: 5px;
+   font-family: 'Roboto', sans-serif;
+   /* ------------------------ */
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(4, auto);
+   grid-template-areas: "header  header header " "main main main" "footer footer footer";
+}
+
+.header {
+   grid-area: header;
+}
+
+.main {
+   grid-area: main;
+}
+
+.footer {
+   grid-area: footer;
+}
+
+/* grid header */
+
+.container .header {
+   width: 1330px;
+   background: #DFF2F6;
+   overflow: hidden;
+   border-radius: 10px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, auto);
+   grid-template-areas: "logo1  proyecto  logo2" " logo1 menus logo2";
+}
+
+.proyecto {
+   grid-area: proyecto;
+}
+
+.container .header .proyecto {
+   font-family: 'Rampart One', cursive;
+   width: 369px;
+   height: 43px;
+   font-size: 20px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.menu {
+   grid-area: menus;
+   width: 680px;
+   height: 50px;
+   background: #FFFFFF;
+   border-radius: 10px;
+}
+
+.menu .opciones {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-content: center;
+   padding: 5px;
+}
+
+.menu .opciones>li {
+   list-style: none;
+   padding: 6px;
+   background: #DFF2F6;
+   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+   margin: auto 2px;
+   border-radius: 5px;
+}
+
+.menu .opciones>li>a {
+   text-decoration: none;
+   font-family: 'Roboto', sans-serif;
+   font-style: normal;
+   font-weight: bold;
+   color: rgba(0, 0, 0, 0.87);
+   height: 22.47px;
+   font-size: 20px;
+   line-height: 23px;
+}
+
+.menu .opciones>li>a>i {
+   float: left;
+   width: 31px;
+   height: 30.28px;
+   border-radius: 5px;
+}
+
+.menu .opciones>li:hover {
+   background: #26A5B8;
+   text-decoration: underline rgb(255, 254, 254);
+}
+
+.logo1 {
+   grid-area: logo1;
+   width: 180px;
+   height: 117.31px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.logo2 {
+   grid-area: logo2;
+   width: 180px;
+   height: 117.31px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.logo1>img {
+   width: 180px;
+   height: 117.31px;
+}
+
+.logo2>img {
+   width: 180px;
+   height: 117.31px;
+}
+
+/* esto es otra cosa  */
+
+.cuerpo {
+   display: grid;
+   grid-template-areas: "slider slider slider " "cursos cursos cursos";
+}
+
+.slider {
+   grid-area: slider;
+   height: auto;
+}
+
+.cursos {
+   grid-area: cursos;
+   background: white;
+   font-family: 'Playfair Display', serif;
+   text-align: center;
+}
+
+/* grid targetas  */
+
+.targetas {
+   display: grid;
+   background: white;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(1, auto);
+   padding: 10px 20px 10px 20px;
+   gap: 8px;
+   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+   border-radius: 5px;
+   margin: auto;
+}
+
+.targetascar1, .targetascar2, .targetascar3 {
+   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.562);
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+}
+
+.targetascar1, .targetascar2, .targetascar3 {
+   padding: 5px 5px 0;
+}
+
+.servicios {
+   background: #26a5b8;
+   text-align: center;
+   color: white;
+}
+
+.leermas>a {
+   display: block;
+   text-decoration: none;
+   background: hsla(188, 66%, 44%, 0.322);
+   color: black;
+   margin: 10px;
+   width: 90px;
+   height: 40px;
+   /* alinia a la mitad de su contenedor padre */
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   font-family: 'Playfair Display', serif;
+}
+
+.leermas>a:hover {
+   background: cyan;
+}
+
+.titulocar>h3 {
+   font-size: 25px;
+   font-family: 'Playfair Display', serif;
+}
+
+.titulocar>p {
+   font-size: 20px;
+   text-align: justify;
+   font-family: 'Playfair Display', serif;
+}
+
+.footer {
+   background: rgb(231, 228, 228);
+   margin: 10px 0 0 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.mensaje {
+   width: 40%;
+}
+
+.logoo {
+   width: 140px;
+   height: 100px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.logoo>img {
+   width: 140px;
+   height: 100px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.loremm {
+   text-align: justify;
+   font-family: 'Playfair Display', serif;
+   padding: 10px;
+}
+
+.siguenos {
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 10px;
+}
+
+.log {
+   display: flex;
+   justify-content: space-between;
+}
+
+.icom {
+   background: white;
+   width: 40px;
+   height: 40px;
+   margin: 5px;
+   text-align: center;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.icom>img {
+   width: 40px;
+   height: 40px;
+   border-radius: 10px;
+}
